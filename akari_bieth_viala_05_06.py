@@ -1,9 +1,9 @@
-﻿
+
 # --------- IMPORTATION FONCTIONS DES LIBRAIRIES : ----------- #
 
 from tkinter import *
 from random import randrange
-
+import platform
 
 
 # --------- CARACTERISTIQUES DE LA FENETRE PRINCIPALE : ----------- #
@@ -21,7 +21,8 @@ fen1.minsize(500, 500)
 fen1.resizable(width = False, height = False)
 
 # Logo de la fenêtre
-fen1.iconbitmap("lampe.ico")
+if platform.system() != "Linux":
+    fen1.iconbitmap(default="@lightbulb_icon.ico")
 
 
 
