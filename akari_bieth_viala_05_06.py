@@ -1,6 +1,7 @@
-
+﻿
 # --------- IMPORTATION FONCTIONS DES LIBRAIRIES : ----------- #
 
+import os
 from tkinter import *
 from random import randrange
 import platform
@@ -895,17 +896,17 @@ def change_frame(frame_name):                                                   
 
 
 # image menu
-image_menu = PhotoImage(file = 'lampe.gif')
+image_menu = PhotoImage(file = os.path.join('image','lampe.gif'))
 
 # images tuto
-image_croix = PhotoImage(file = 'Croix.gif')
-image_eclairage = PhotoImage(file = 'Eclairage.gif')
-image_2eclairage = PhotoImage(file = 'Double_eclairage.gif')
-image_eclairage_noir = PhotoImage(file = 'Eclairage_noir.gif')
-image_1 = PhotoImage(file = '1.gif')
-image_4 = PhotoImage(file = '4.gif')
-image_vide = PhotoImage(file = 'vide.gif')
-image_rempli = PhotoImage(file = 'rempli.gif')
+image_croix = PhotoImage(file = os.path.join('image','Croix.gif'))
+image_eclairage = PhotoImage(file = os.path.join('image','Eclairage.gif'))
+image_2eclairage = PhotoImage(file = os.path.join('image','Double_eclairage.gif'))
+image_eclairage_noir = PhotoImage(file = os.path.join('image','Eclairage_noir.gif'))
+image_1 = PhotoImage(file = os.path.join('image','1.gif'))
+image_4 = PhotoImage(file = os.path.join('image','4.gif'))
+image_vide = PhotoImage(file = os.path.join('image','vide.gif'))
+image_rempli = PhotoImage(file = os.path.join('image','rempli.gif'))
 
 frame_info = menu(fen1)
 
