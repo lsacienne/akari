@@ -33,7 +33,7 @@ def akari_gameplay(matrice_grille):
     global position, nbre_chance, compteur, position_croix, victoire_echec
     """ On définit deux grilles : une pour les croix, complétement vide ( avec 'O') et une qui dépend de la grille choisie dans le menu (maztrice_grille) """
 
-    """ Cette variable peremt de savoir si le joueur a gagné, elle empêche le joueur d'appuyer sur n'importe quel bouton lorsque l'écran de victoire ou d'échec est actif """
+    """ Cette variable permet de savoir si le joueur a gagné, elle empêche le joueur d'appuyer sur n'importe quel bouton lorsque l'écran de victoire ou d'échec est actif """
     victoire_echec = 0
 
     position_croix = ["O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O","O"]
